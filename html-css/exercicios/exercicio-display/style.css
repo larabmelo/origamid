@@ -1,0 +1,42 @@
+
+body {
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+    margin: 0px;
+}
+
+p {
+    color: #b2b2b2;
+}
+
+.price, .spec {
+    color: #febe01;
+}
+
+.produto {
+    background-color: #111;
+    color: white;
+    border-radius: 4px;
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+}
+
+a {
+    background-color: #febe01;
+    color: #111;
+    color: #332100;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
