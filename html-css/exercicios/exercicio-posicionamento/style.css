@@ -17,6 +17,7 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px;
+    margin-bottom: 50px;
 }
 
 .link-menu {
@@ -31,18 +32,16 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 50px;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin: auto 50px;
 }
 
 .info {
-    justify-content: center;
+    max-width: 500px;
     text-align: right;
     background-color: white;
     padding: 35px 35px;
-    max-width: 550px;
-
+    position: relative;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -58,5 +57,54 @@ img {
     width: 450px;
 }
 
+.link-info {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    background-color: #ee2211;
+    padding: 10px 25px;
+    border-radius: 4px;
+}
 
+.barra-vermelha {
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background-color: #ee2211;
+    top: 12%;
+    left: 94%;
+}
 
+.vantagens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto 50px;
+}
+
+h3 {
+    font-size: 64px;
+    color: #c6c6c6;
+    text-align: right;
+    
+    width: 400px;
+    margin-right: 10px;
+}
+
+.itens-vantagens {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: white;
+    width: 450px;
+    box-sizing: border-box;
+    padding: 10px 25px;
+}
+
+.footer {
+    margin-top: 50px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    height: 50px;
+}
