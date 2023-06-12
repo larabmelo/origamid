@@ -1,0 +1,42 @@
+.header {
+    max-width: 1200px; 
+    padding: 40px 30px; /*o padding eh melhor pq trabalha com uma margem interna, se eu precisasse usar uma cor, nao aplicaria na margem*/
+    margin: 0 auto; /*alinhar elementos com max-width preciso usar margin left e right, 0 top e bottom e auto pro lado pro outro*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*eu centralizo os itens entre eles!*/
+    
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap; /*caso o menu diminua mais que o tamanho dele, ele quebra*/
+    gap: 10px; /*coloquei gap pequeno pq vou aumentar com padding depois*/
+}
+
+.header-menu a {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    padding: 10px 20px; /*o padding ajuda a aumentar a area de clique!*/
+    text-decoration: none;
+    color: #141414;
+    display: block; /*coloco display block pra assegurar os valores de padding, ja que inline nao respeita quando cresce */
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .header a {
+        background-color: #f5f5f5;
+        border-radius: 4px;
+    }
+
+    .header-menu {
+        justify-content: center;
+        gap: 15px;
+    }
+}

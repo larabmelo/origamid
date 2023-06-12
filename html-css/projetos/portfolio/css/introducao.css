@@ -1,0 +1,83 @@
+.introducao {
+    max-width: 1200px; /*pra manter o padrao das config gerais do body*/
+    padding: 40px 30px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center; /*pra alinhar os conteudos dentro da grid no centro do outro!!!!!*/
+}
+
+.introducao h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative; /*position relative para que o detalhe absolute possas ser colocado de acordo com o elemento pai, que é o h1. se nao tivesse relative aqui, o top etc seriam em relacao a pagina!*/
+}
+
+/*codigo abaixo sempre uso quando quero colocar algo atras ou na frente de algum texto*/
+.introducao h1::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(../img/detalhe.svg) no-repeat center;
+    position: absolute;
+    top: -15px;
+    left: -40px;
+    z-index: -1;
+}
+
+.introducao p {
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+/*até aqui, quando diminuimos a pagina, apenas a img diminui porque a palavra "desenvolvedor" do h1 nao consegue ser quebrada. 
+quando nao pode quebrar a palavra, o fr da img passa a ser diminuido o maximo, pois n tem tamanho fixo! */
+
+@media (max-width: 1000px) {
+    .introducao h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .introducao {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .introducao h1 {
+        font-size: 2rem;
+    }
+
+    .introducao p {
+        font-size: 1.3rem;
+    }
+
+    .introducao h1::before {
+        width: 30px;
+        height: 10px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .introducao {
+        grid-template-columns: 1fr;
+    }
+
+    .introducao img {
+        display: none;
+    }
+
+    .introducao h1 {
+        font-size: 2.3rem;
+    }
+
+    .introducao p {
+        font-size: 1.3rem;
+    }
+}
