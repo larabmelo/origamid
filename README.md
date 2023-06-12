@@ -1,5 +1,5 @@
-# origamid
- 1. front-end exercises from origamid web design institution 
+# origamid webdesign institution
+ 1. front-end exercises 
 
 <a href="https://larabmelo.github.io/origamid/html-css/exercicios/exercicio-display/index.html">display exercise</a>
 
@@ -9,6 +9,6 @@
 
 <a href="https://larabmelo.github.io/origamid/html-css/exercicios/exercicio-responsivo/index.html">responsive exercise</a>
 
-2. front-end projects from origamid web design institution 
+2. front-end projects  
 
 (still to come)
