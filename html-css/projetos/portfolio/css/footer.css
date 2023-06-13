@@ -35,4 +35,15 @@
     grid-column: 1 / -1;
     font-size: 1.25rem;
     color: #8f8f8f;
-}/*para expandir, uso grid column*/
+}/*para expandir mais de uma coluna, uso grid column de tal até tal*/
+
+@media (max-width: 800px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-contato li {
+        font-size: 1.5rem;
+    }
+}

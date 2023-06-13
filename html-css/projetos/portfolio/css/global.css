@@ -17,6 +17,7 @@ ul {
 img {
     max-width: 100%;
     display: block;
+    height: auto; /*vai ser definido automaticamente de acordo com o valor da largura, sem esmagar a imagem*/
 }
 
 .subtitulo {
