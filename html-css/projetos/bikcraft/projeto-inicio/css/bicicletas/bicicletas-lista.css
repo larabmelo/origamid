@@ -1,0 +1,70 @@
+.bicicletas-lista {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.bicicletas-lista h2 {
+    margin-bottom: 40px;
+}
+
+.bicicletas-lista ul {
+    display: flex;
+    gap: 40px;
+    padding: 0 20px 20px 20px;
+    max-width: 1400px;
+    /* se tenho maximo, sempre preciso definir as margins pra centralizar */
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+    /* overflow auto cria barra so quando necessario e em qual eixo ainda */
+}
+
+/* aqui embaixo eu transformo todo o a em display block, caso selecionasse os itens, eles nao seriam separados */
+.bicicletas-lista a {
+    display: block;
+} 
+
+/* abaixo é o item flexivel, pois o pai (ul) que esta flex) */
+.bicicletas-lista li {
+    flex: 1;
+    min-width: 280px;
+}
+    /* sempre vai ter no minimo 280 e vai tentar colocar */
+
+
+.bicicletas-lista img {
+    margin-bottom: 16px;
+}
+
+.bicicletas-lista h3 {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.bicicletas-lista h3::before {
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    background-color: var(--cor-p1);
+    margin-right: 8px;
+    transition: width 0.2s;
+}
+
+.bicicletas-lista a:hover h3::before {
+    width: 24px;
+}
+
+.bicicletas-lista li span {
+    padding-left: 20px;
+}
+
+/* @media (max-width: 800px) {
+    .bicicletas-lista {
+        padding-bottom: 60px;
+    }
+    .bicicletas-lista ul {
+        gap: 20px;
+    }
+} */
