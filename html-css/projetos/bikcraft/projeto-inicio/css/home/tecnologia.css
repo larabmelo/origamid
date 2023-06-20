@@ -6,6 +6,7 @@
 .tecnologia {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 40px;
 }
 /* o grid ficou certinho porque dividi em div de conteudo e img, e nao as coisas soltas */
 

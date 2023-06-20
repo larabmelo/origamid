@@ -1,0 +1,64 @@
+.parceiros {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.parceiros h2 {
+    margin-bottom: 60px;
+}
+
+.parceiros ul {
+    padding: 0 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.parceiros li {
+    display: flex;
+    padding: 32px;
+    border-left: 1px solid var(--cor-2);
+}
+/* tem que ter display flex ou grid pra margin auto funcionar */
+
+.parceiros li:first-child, 
+.parceiros li:nth-child(5) {
+    border-left: none;
+}
+
+.parceiros li:nth-child(n + 5) {
+    border-top: 1px solid var(--cor-2);
+}
+
+.parceiros img {
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+    .parceiros {
+        padding-bottom: 60px;
+    }
+
+    .parceiros h2 {
+        margin-bottom: 20px;
+    }
+
+    .parceiros ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+     .parceiros h2 {
+        padding: 20px;
+    }
+
+
+    .parceiros li:nth-child(n + 3) {
+        border-top: 1px solid var(--cor-2);
+    }
+
+    .parceiros li:nth-child(odd) {
+    border-left: none;
+}
+
+}

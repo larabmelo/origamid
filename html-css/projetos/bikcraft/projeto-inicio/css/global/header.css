@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center; /*aqui eu centralizo os itens dentro do flex entre eles mesmos */
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     /* box-sizing: border-box;
     max-width: 1200px; /*aqui eu decido max-width para que o container pare de crescer em algum momento, mas ele ainda vai ficar grudado em algum canto, pra centralizar uso margin left e right auto 
     margin-left: auto;
