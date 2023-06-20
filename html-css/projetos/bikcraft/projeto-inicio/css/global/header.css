@@ -1,5 +1,5 @@
 .header-bg {
-    background-color: var(--cor-12);
+    background-color: var(--cor-11);
 }
 
 .header {
@@ -71,7 +71,7 @@
 
     .header-menu a {
         padding: 8px 12px;
-        font-size: 14px;
+        font-size: 1rem;
     }
 
 }
