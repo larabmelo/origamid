@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+#seguros .seguros {
+    padding-top: 0;
+}
+
 .seguros h2 {
     grid-column: 1 / -1;
 }
@@ -20,6 +24,7 @@
     padding: 32px 32px 32px 60px;
     display: grid;
     grid-template-columns: 1fr auto;
+    border-radius: 4px;
     /* o auto do R199 significa que ele vai ocupar o pedacinho do tamanho total do conteudo */
 }
 
@@ -57,7 +62,7 @@
     display: inline-block;
     width: 13px;
     height: 9px;
-    background-image: url(../../img/icones/lista.svg);
+    background-image: url('../../img/icones/lista.svg');
     position: absolute;
     left: -21px;
 }

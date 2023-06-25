@@ -1,0 +1,124 @@
+.bicicletas-bg {
+    background: linear-gradient(to right, var(--cor-0) 25%, var(--cor-11) 0%);
+    /* box-shadow: inset 120px 0px var(--cor-0);
+     o problema do valor fixo no box-shadow é que se aumentar a tela, o box-shadow desaparece. e nao aceita porcentagem. aqui seria melhor usar gradiente!!!!!!!! */
+}
+
+.bicicletas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bicicletas-imagem {
+    display: grid;
+    /* a partir do momento que coloco display grid, os elementos tentam ocupar 100% */
+    align-content: center;
+}
+
+.bicicletas-imagem img {
+    grid-area: 1/1;
+    /* dois elementos em um mesmo local, tentam ficar um em cima do outro */
+}
+
+.bicicletas-imagem span {
+    grid-area: 1/1;
+    /* vai ficar na primeira linha e primeira coluna */
+    place-self: start end;
+    margin-top: 20px;
+    background-color: var(--cor-12);
+    padding: 8px 16px 8px 8px;
+    display: inline-block;
+    border-radius: 4px 0 0 4px;
+}
+
+.bicicletas-imagem span.branco {
+    color: var(--cor-11);
+    background-color: var(--cor-0);
+}
+
+.bicicletas-conteudo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: start;
+    /* assim deixa o conteudo alinhado em cima sem aumentar o espacamento quando a imagem aparece */
+}
+
+.bicicletas-conteudo h2,
+.bicicletas-conteudo p {
+    grid-column: 1/-1;
+}
+
+.bicicletas h2 {
+    margin-bottom: 15px;
+}
+
+.bicicletas h2::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background-color: var(--cor-p1);
+    margin-bottom: 8px;
+}
+
+.bicicletas p {
+    margin-bottom: 25px;
+}
+
+.bicicletas a {
+    place-self: end;
+}
+
+.bicicletas li {
+    display: flex;
+    align-items: center;
+    /* gap: 8px; */
+}
+
+.bicicletas li + li {
+    margin-top: 12px;
+}
+
+.bicicletas-conteudo img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.bicicletas ul {
+    display: grid;
+    gap: px;
+}
+
+
+@media (max-width: 800px) {
+
+    .bicicletas-bg {
+        background: var(--cor-11);
+    }
+
+    .bicicletas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .bicicletas-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .bicicletas ul {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 32px;
+        font-size: 1rem;
+    }
+
+    .bicicletas a {
+        place-self: start;
+    }
+}
