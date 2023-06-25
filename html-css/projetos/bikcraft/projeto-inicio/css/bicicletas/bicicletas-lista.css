@@ -2,6 +2,10 @@
     padding-top: 10px;
     padding-bottom: 80px;
 }
+/* aqui embaixo eu falo so com o que tiver dentro da ID bicicleta, que no nosso caso das paginas internas é o ID do body */
+#bicicleta .bicicletas-lista {
+    padding-top: 40px;
+}
 
 .bicicletas-lista h2 {
     margin-bottom: 40px;
@@ -17,6 +21,10 @@
     margin-right: auto;
     overflow-x: auto;
     /* overflow auto cria barra so quando necessario e em qual eixo ainda */
+}
+
+#bicicleta .bicicletas-lista ul {
+    padding: 0 0 20px 0;
 }
 
 /* aqui embaixo eu transformo todo o a em display block, caso selecionasse os itens, eles nao seriam separados */
