@@ -43,6 +43,8 @@
     font-weight: 600;
     max-width: max-content; 
     /* max width max content no botao diz que ele sempre vai ter o tamanho maximo do conteudo dele */
+    border: none;
+    cursor: pointer;
 }
 
 .botao:hover {
