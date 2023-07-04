@@ -54,3 +54,23 @@ function eventosPerguntas(pergunta) {
 }
 
 perguntas.forEach(eventosPerguntas);
+
+// GALERIA DE BICICLETAS
+
+const galeria = document.querySelectorAll('.bicicleta-imagens img');// se colocasse so query selector selecionaria o primeiro item da lista apenas, mas queremos todos
+const galeriaContainer = document.querySelector('.bicicleta-imagens');
+
+function trocarImagem(event) {
+  const img = event.currentTarget;
+  const media = matchMedia('(min-width: 1000px)').matches;
+  if (media) {
+    galeriaContainer.prepend(img);
+  }
+}
+
+function eventosGaleria(img) {
+  img.addEventListener('click', trocarImagem);
+//o evento acontece na img dentro da galeria
+}
+
+galeria.forEach(eventosGaleria);
