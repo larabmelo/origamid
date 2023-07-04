@@ -80,3 +80,8 @@ galeria.forEach(eventosGaleria);
 if(window.SimpleAnime) {
   new window.SimpleAnime();
 }
+
+// ex. plugin externo CLIPBOARD
+// if(window.ClipboardJS) {
+//   new ClipboardJS('.introducao-conteudo p');
+// }
