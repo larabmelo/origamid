@@ -29,6 +29,9 @@ function pi() {
 }
 
 let total = 5 * pi(); // o pi eh ja o 3.14 porque a funcao retorna esse valor, e eu sempre preciso executar a funcao!!! com os parenteses. sem os parenteses, eh apenas uma variavel ou uma funcao sem executar.
+
+
+//se o console retornar a estrutura da funcao e nao o resultado dela, vc provavelmente esqueceu de ativa-la
 console.log(total);
 
 /* 
@@ -136,22 +139,24 @@ function terceiraIdade(idade) {
   }
 }
 
-- nao é uma boa ideia uma funcao retornar diferentes tipos de dados como booleano e string. melhor manter algum.
+- nao é uma boa ideia uma funcao retornar diferentes tipos de dados como booleano e string. melhor manter um dado especifico.
 */
 
 
 function terceiraIdade(idade) {
   console.log(typeof idade);
-  if(typeof idade !== 'number') {
+   if(typeof idade !== 'number') {
     return 'Por favor, preencha um número'
-  } else if(idade >= 60) {
+     } else if(idade >= 60) {
     return true;
   } else {
     return false;
-  }
+   }
 } // quando bate no return, ignora tudo de baixo
 
-console.log(terceiraIdade(60))
+ console.log(terceiraIdade(60))
+
+
 
 /* ---- ESCOPO -----
 - variaveis e funcoes definidas dentro de um bloco {}, nao sao visiveis fora dele
@@ -167,4 +172,6 @@ console.log(totalPaises); // da erro porque esta dentro do escopo!, por isso dec
 /*
 ---- HOISTING ----
 - antes de declarar uma funcao, o JS move todas as funcoes declarada para a memoria. pois o js le todo o documento inteiro c variaveis e funcoes e manda pra cima, so assim ele executa.
+
+MESMO que eu chame a function antes da escrita dela, vai funcionar pq o JS move todas as variaveis e funcoes declaradas para a memoria lendo o doc inteiro
 */

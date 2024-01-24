@@ -40,3 +40,8 @@ let pesoPorDois1 = numero / 2;
 console.log(pesoPorDois1)
 
 // OU let numero = +'80' / 2;
+
+// let numero = +'80' / 2;
+// let unidade = 'kg';
+// let peso = numero + unidade;
+// console.log(peso):

@@ -16,12 +16,13 @@ if(minhaIdade > idadePrimo) {
 var expressao = (5 - 2) && (5 - ' ') && (5 - 2);
 console.log(expressao)
 
+
 // Verifique se as seguintes variáveis são Truthy ou Falsy
 var nome = 'Andre';
 var idade = 28;
 var possuiDoutorado = false; //false
-var empregoFuturo; //undefined false
-var dinheiroNaConta = 0; // null false
+var empregoFuturo; //undefined é false
+var dinheiroNaConta = 0; // null é false
 
 console.log(!!nome, !!idade, !!possuiDoutorado, !!empregoFuturo, !!dinheiroNaConta);
 
@@ -48,3 +49,4 @@ if(('Gato' === 'gato') || (5 > 2)) {
 } else {
   console.log('Falso');
 } // cao é a resposta porque durante o e (&&), o ultimo true é o que sai. como gato e cao sao strings, sao true, a ultima que sai
+

@@ -1,3 +1,5 @@
+//serve pra memorizar dados sem ter que repetir o tempo todo
+
 let nome = 'Lara';
 let idade = 23;
 const possuiFaculdade = true;
@@ -8,11 +10,13 @@ let preco = 25;
 let totalComprado = 5;
 let totalPreco = totalComprado * preco;
 
+//posso colocar virgula pra declarar varias variaveis
+
 let sobrenome = 'borba', 
     cidade = 'munique';
 
 let semDefinir;
-//o valor nao foi definido ainda
+//o valor nao foi definido ainda, pode declarar sem valor. ela vai retornar sempre UNDEFINED
 
 
 /* ---- COMO ESCREVER VARIAVEIS ---
@@ -29,10 +33,10 @@ let semDefinir;
 
 /* 
 ------ HOISTING -------
-
+- o javascript le linha por linha, porem as variaveis sao passadas pra cima do código. menos o valor dela, só mostra o valor se vc colocar console.log depois da atribuicao dessa variavel
 - quando criamos variavies, elas sempre vao pra cima do código, porém o valor dessa variavel nao é movido
 
-
+ 
 ----- MUDAR VALOR ATRIBUIDO -----
 
 - var e let pode-se mudar o valor atribuido

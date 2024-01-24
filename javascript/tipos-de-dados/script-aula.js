@@ -21,6 +21,8 @@ console.log(typeof idade);
 
 // isso ajuda a verificar o tipo do dado
 
+// typeof null retorna sempre objeto
+
 /* ----- STRING ----- 
 
 voce pode somar uma string e concatenar as palavras

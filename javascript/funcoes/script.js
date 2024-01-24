@@ -1,7 +1,7 @@
 // Crie uma função para verificar se um valor é Truthy
 
 function verificarValor(dado) {
- return !!dado; //essa expressao retorna valores booleanos, um ! torna o oposto, dois !! da exatamente o que é
+ return !!dado; //essa expressao retorna valores booleanos (true or false), um ! torna o oposto, dois !! da exatamente o que é
 }
 
 console.log(verificarValor(5))
@@ -28,7 +28,7 @@ console.log(nomeCompleto('Lara', 'Melo'))
 // Crie uma função que verifica se um número é par
 
 function numeroPar(numero) {
-  if(numero % 2 == 0) {
+  if(numero % 2 == 0) { // resto de numero dividido por 2 == 0
     return 'É par'
   } else {
     return 'Nao é par'
@@ -55,7 +55,7 @@ function nomeCompleto(nome, sobrenome) {
   console.log(`${nome} ${sobrenome}`);
 }
 
-addEventListener('scroll', function () {
+addEventListener('scroll', function () { // scroll é o evento, nativo do JS
   nomeCompleto('Lara', 'Melo');
 });
 
