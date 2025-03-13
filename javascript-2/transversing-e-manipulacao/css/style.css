@@ -17,6 +17,10 @@ ul {
   list-style: none;
 }
 
+.azul {
+  background-color: aqua;
+}
+
 body {
   background: #faf6ed;
   color: #222;
