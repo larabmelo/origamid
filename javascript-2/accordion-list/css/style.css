@@ -247,3 +247,24 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
+
+.js .js-accordion dd { 
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.js-accordion dt::after {
+  content: '⤵';
+  margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after {
+  content: '⤴';
+}
+
+.js-accordion dd.ativo {
+  max-height: 200px;
+  opacity: 1;
+}
