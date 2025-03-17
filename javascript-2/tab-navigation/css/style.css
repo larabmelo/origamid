@@ -228,7 +228,7 @@ body {
   }
 }
 
-.js-tabcontent section {
+.js .js-tabcontent section { /* quando nao tem .js, ou seja, o script que adiciona esse .js nao funciona por causa do js desabilitado, esse estilo nao< ocorre pois só adiciona ao elemento .js-tab-content filho do .js do html. ou seja, quem tem problemas com javascript vai ter o display normal! */
   display: none; 
 }
 
