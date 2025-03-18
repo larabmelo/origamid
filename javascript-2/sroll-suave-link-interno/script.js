@@ -78,3 +78,28 @@ linksInternos.forEach((link) => {
 })
 }
 initScrollSuave();
+
+// scroll animado
+
+function initAnimaScroll() {
+
+const sections = document.querySelectorAll('.js-scroll');
+
+if(sections.length) {
+function animaScroll() {
+    sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const isSectionVisible = window.innerHeight * 0.80; // Trigger when 75% of the section is visible
+        if(sectionTop < isSectionVisible) {
+            section.classList.add('ativo');
+        } else {
+            // section.classList.remove('ativo'); // pra animacao ocorrer sempre
+        }
+    })
+}
+
+animaScroll();
+window.addEventListener('scroll', animaScroll);
+}
+}
+initAnimaScroll();
