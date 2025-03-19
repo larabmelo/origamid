@@ -14,3 +14,5 @@
 <a href="https://larabmelo.github.io/origamid/html-css/projetos/portfolio/index.html">responsive portfolio website project</a>
 
 <a href="https://larabmelo.github.io/origamid/html-css/projetos/bikcraft/projeto-inicio/index.html">responsive bikcraft website project</a>
+
+<a href="https://larabmelo.github.io/origamid/javascript-2/scroll-suave-link-interno/index.html">fantastic animals project</a>
